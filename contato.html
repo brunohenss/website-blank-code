@@ -4,12 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blank Code | CONTATO</title>
+    <link rel="shortcut icon" href="/imagens/icon-blank.ico" type="image/x-icon">
 </head>
 <body>
-    <link rel="shortcut icon" href="/imagens/icon-blank.ico">
-    <a href="whatsapp.web">Solicite uma proposta</a>
-    <a href="instagram.com">Nos siga no instagram</a>
-    <a href="https://www.linkedin.com/company/blankcode">Veja nossa página no LinkedIn</a>
+    <a href="index.html">Início</a>
+
+    <h1>Entre em contato com nossa equipe especializada!</h1>
+    <p>Insira as informações abaixo, e nos envie seu contato. Ficaremos felizes em ajudá-lo... 
+        <img src="/imagens/e-mail.png" width="30" alt="email-icon"> </p>
+
+    <form name: "contato-cliente" onsubmit="alert('Contato enviado com sucesso')" method="post" action="#">
+        Seu nome: <input type="text" name: "nome" /> <br>
+        Seu Email: <input type="email" name: "email" /> <br>
+        Nome da sua empresa: <input type="text" name: "empresa" /> <br>
+
+        Seu cargo: <select name="cargo"> 
+        <option value="diretor">Diretor</option>
+        <option value="gerente">Gerente</option>
+        <option value="tecnico">Técnico</option>
+        <option value="analista">Analista</option>
+        <option value="comercial">Comercial</option>
+        <option selected="outro">Outro...</option> </select> <br>
+
+        Seu telefone principal: <input type="text" name: "telefone" /> <br>
+        Como podemos te ajudar? <textarea name="descricao" id=""></textarea> /> 
+        <p>Podemos entrar em contato com você pelo WhatsApp? </p>
+        Não <input type="radio" name="mensagem" value="Sim">
+        Sim<input type="radio" name="mensagem" value="Não"> <br> 
+        <button type="submit">Enviar Contato</button>
+    </form> <br>
+    <a href="instagram.com">Nos siga no instagram</a> <br>
+    <a href="https://www.linkedin.com/company/blankcode">Veja nossa página no LinkedIn</a> <br>
     <a href="whatsapp.web">Canal de suporte técnico</a>
     
 </body>
